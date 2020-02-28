@@ -15,6 +15,6 @@ app.use(
 /**
  * API
  */
-app.get('/api/hello', hello.index)
+app.get('/api/hello/', hello.index)
 
 export default app
