@@ -1,6 +1,8 @@
 import path from 'path'
-import express, { Request, Response } from 'express'
+import express from 'express'
 import cors from 'cors'
+
+import * as hello from './api/hello'
 
 const app = express()
 
@@ -10,8 +12,9 @@ app.use(
   express.static(path.join(__dirname, '../../client/dist/'))
 )
 
-app.get('/', (req: Request, res: Response) => {
-  res.write('<h1>Hello world!</h1>')
-})
+/**
+ * API
+ */
+app.get('/api/hello', hello.index)
 
 export default app
