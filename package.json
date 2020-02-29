@@ -1,11 +1,13 @@
 {
   "name": "typescript-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny but mighty full stack TypeScript environment.",
   "main": "server/dist/index.js",
   "scripts": {
     "start": "node server/dist/index.js",
-    "dev": "nodemon",
+    "watch": "concurrently \"npm:watch:*\"",
+    "watch:server": "nodemon",
+    "watch:client": "parcel watch client/src/index.html --out-dir client/dist/ --public-url ./",
     "build": "npm run build:client && npm run build:server",
     "build:server": "tsc",
     "build:client": "parcel build client/src/index.html --out-dir client/dist/ --public-url ./ --no-source-maps",
