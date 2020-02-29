@@ -1,4 +1,4 @@
-I was tired of writing build pipeline boilerplate for projects so I made this lightweight zero-config TypeScript starter.
+I was tired of writing build tooling boilerplate for projects so I made this lightweight zero-config TypeScript starter.
 
 # Client Side
 - [TypeScript](https://www.typescriptlang.org/)
