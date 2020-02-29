@@ -1,6 +1,6 @@
 import * as api from './api'
 
-function fetchMessage() {
+async function fetchMessage() {
   const btn = document.getElementById('testBtn') as HTMLButtonElement
 
   btn.disabled = true
