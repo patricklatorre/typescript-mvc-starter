@@ -2,14 +2,15 @@ I was tired of writing build tooling boilerplate for projects so I made this lig
 
 ---
 
-# Client Side
+# What's in the box
+**Client-side**
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://www.npmjs.com/package/sass)
 - [Parcel](https://parceljs.org/)
 - *(anything supported by Parcel -- Babel, React, PostCSS, etc)*
 - Sample page using Sass and TypeScript with a sample ajax call to server.
 
-# Server Side
+**Server-side**
 - [TypeScript](https://www.typescriptlang.org/)
 - [Express](https://www.npmjs.com/package/express)
 - Sample REST API
