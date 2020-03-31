@@ -1,7 +1,7 @@
 import config from './config'
 
 export const getMessage = async () => {
-  const url = config.api + 'hello/'
+  const url = config.api + 'messages/'
 
   const response = await fetch(url, {
     cache: 'no-cache',
