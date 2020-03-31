@@ -1,16 +1,17 @@
 import path from 'path'
 import express from 'express'
+import http from 'http'
 
-import * as hello from './api/hello'
+import apiRoutes from './api/routes'
 
 const app = express()
+const server = http.createServer(app)
 
 app.use(express.json())
 app.use(
   express.static(path.join(__dirname, '../../client/dist/'))
 )
 
-// API routes
-app.get('/api/hello/', hello.index)
+app.use('/api', apiRoutes)
 
-export default app
+export default server
