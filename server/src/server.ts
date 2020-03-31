@@ -1,9 +1,11 @@
 import path from 'path'
 import express from 'express'
+import http from 'http'
 
 import * as hello from './api/hello'
 
 const app = express()
+const server = http.createServer(app)
 
 app.use(express.json())
 app.use(
@@ -13,4 +15,4 @@ app.use(
 // API routes
 app.get('/api/hello/', hello.index)
 
-export default app
+export default server
